@@ -1,3 +1,10 @@
+const configuration = {
+    runOnly: {
+        type: 'tag',
+        values: ['wcag21aa', 'wcag21a', 'wcag2aa', 'wcag2a'],
+    }
+};
+
 describe('Create case', () => {
     it('Checking accessibility on the create case form', () => {
         cy.loginByCSRF();
@@ -6,6 +13,6 @@ describe('Create case', () => {
         cy.contains('.select2-results__option', 'Library').click();
         cy.get('.js-create-case-form').submit();
         cy.injectAxe();
-        cy.checkA11y();
+        cy.checkA11y(configuration);
     });
 });
