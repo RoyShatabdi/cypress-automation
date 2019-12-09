@@ -1,0 +1,20 @@
+<project name="cypress-axe" basedir="." xmlns:if="ant:if" xmlns:unless="ant:unless">
+    <target name="npm-install">
+        <exec executable="npm" failonerror="false">
+            <arg value="install" />
+        </exec>
+    </target>
+
+    <target name="test-newman" description="Run tests with Newman">
+        <exec
+                executable="${basedir}/node_modules/.bin/cypress"
+                failonerror="false"
+                resultproperty="test.result.newman"
+        >
+            <arg value="run" />
+        </exec>
+    </target>
+
+    <target name="prepare" depends="npm-install" description="Prepare for build">
+    </target>
+</project>
