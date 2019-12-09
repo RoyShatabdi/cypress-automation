@@ -1,0 +1,20 @@
+{
+  "name": "autoaxecy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "axe-core": "^3.4.0",
+    "cypress": "^3.7.0",
+    "cypress-axe": "^0.5.3",
+    "start-server-and-test": "^1.10.6"
+  },
+  "scripts": {
+    "cy:run": "cypress run",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+
+  "author": "",
+  "license": "ISC"
+}

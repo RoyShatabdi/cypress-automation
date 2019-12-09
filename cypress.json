@@ -1,0 +1,7 @@
+{
+  "env": {
+    "baseUrl": "https://rbwm.test1.cxm.ntn.jadu.net/q",
+    "admin_email": "jadu@hq.jadu.net",
+    "admin_password": "Admin123!"
+  }
+}
