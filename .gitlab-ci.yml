@@ -19,7 +19,6 @@ cypress:
         - npm ci
         - npx cypress cache path
         - npx cypress cache list
-        - $(npm bin)/print-env CI
         - npx cypress run
     artifacts:
         when: always
