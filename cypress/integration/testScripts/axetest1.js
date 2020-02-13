@@ -7,7 +7,7 @@ const configuration = {
 
 describe('visit page', () => {
     it('Visits the page', function() {
-        cy.visit('https://stellar-photon.ntn.jadu.net/');
+        cy.visit('https://10.105.1.163/');
         cy.injectAxe();
         cy.checkA11y(configuration);
     })
