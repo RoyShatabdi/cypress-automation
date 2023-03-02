@@ -6,7 +6,7 @@
   "dependencies": {},
   "devDependencies": {
     "axe-core": "^3.4.0",
-    "cypress": "^3.8.0",
+    "cypress": "^12.7.0",
     "cypress-axe": "^0.5.3",
     "start-server-and-test": "^1.10.6"
   },
